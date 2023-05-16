@@ -3,12 +3,14 @@ FROM node
 WORKDIR /usr/app
 
 RUN npm init -y && \
-    npm i typescript -D \
-    npm i @types/node -D \
-    npm i tsx -D \
+    npm i typescript -D && \
+    npm i @types/node -D && \
+    npm i tsx -D && \
     npm i fastify && \
-    #npm i prisma typescript ts-node @types/node --save-dev && \
-    #npm i @prisma/client
+    npm i eslint -D && \
+    npm i @rocketseat/eslint-config -D
+    npm i prisma - D && \
+    npm i @prisma/client
 
 COPY package.json ./
 #COPY .env ./
