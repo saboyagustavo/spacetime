@@ -8,6 +8,12 @@ export default function Home() {
     <main className="grid h-screen grid-cols-2">
       {/* left */}
       <section className="relative flex flex-col items-start justify-between overflow-hidden border-r border-white/10 bg-[url(../assets/bg-stars.svg)] bg-cover px-28 py-16">
+        {/* blur */}
+        <div className="absolute right-0 top-1/2 h-[288px] w-[526px] -translate-y-1/2 translate-x-1/2 rounded-full bg-purple-800 opacity-50 blur-full" />
+
+        {/* stripes */}
+        <div className="absolute bottom-0 right-2 top-0 w-2 bg-stripes" />
+
         {/* sign-in */}
         <a
           href=""
@@ -23,7 +29,7 @@ export default function Home() {
         </a>
 
         {/* hero */}
-        <div className="space-y-5">
+        <div className="z-50 space-y-5">
           <Image src={nlwLogo} alt="NLW Spacetime" />
           <h1 className="text-5xl font-bold leading-tight text-gray-50">
             Your own time capsule
@@ -43,7 +49,7 @@ export default function Home() {
         </div>
 
         {/* copyright */}
-        <footer className="font-mono text-xs leading-relaxed text-gray-200">
+        <footer className="font-mono text-2xs leading-relaxed text-gray-200">
           MADE WITH 💜 AT NLW SPACETIME FROM&nbsp;
           <a
             target="_blank"

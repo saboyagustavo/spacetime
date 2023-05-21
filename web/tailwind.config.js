@@ -7,11 +7,6 @@ module.exports = {
   ],
   theme: {
     extend: {
-      fontFamily: {
-        sans: 'var(--font-roboto)',
-        alt: 'var(--font-bai)',
-        mono: 'var(--font-mono)',
-      },
       colors: {
         gray: {
           50: '#eaeaea',
@@ -73,6 +68,30 @@ module.exports = {
           800: '#027435',
           900: '#025929',
         },
+      },
+
+      backgroundImage: {
+        stripes:
+          'linear-gradient(to bottom, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1) 12.5%, transparent 12.5%, transparent)',
+      },
+
+      backgroundSize: {
+        stripes: '100% 8px',
+      },
+
+      fontFamily: {
+        sans: 'var(--font-roboto)',
+        alt: 'var(--font-bai)',
+        mono: 'var(--font-mono)',
+      },
+
+      fontSize: {
+        '5xl': '2.5rem',
+        '2xs': '0.625rem',
+      },
+
+      blur: {
+        full: '12.125rem',
       },
     },
   },
