@@ -10,9 +10,10 @@ module.exports = {
       fontFamily: {
         sans: 'var(--font-roboto)',
         alt: 'var(--font-bai)',
+        mono: 'var(--font-mono)',
       },
       colors: {
-        grey: {
+        gray: {
           50: '#eaeaea',
           100: '#bebebf',
           200: '#9e9ea0',

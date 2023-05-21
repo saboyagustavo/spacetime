@@ -1,11 +1,18 @@
-import { ReactNode } from 'react'
-
 import './globals.css'
-import { Roboto_Flex as Roboto, Bai_Jamjuree as Bai } from 'next/font/google'
+import { ReactNode } from 'react'
+import {
+  Roboto_Flex as Roboto,
+  Roboto_Mono as Mono,
+  Bai_Jamjuree as Bai,
+} from 'next/font/google'
 
 const roboto = Roboto({
   subsets: ['latin'],
   variable: '--font-roboto',
+})
+const mono = Mono({
+  subsets: ['latin'],
+  variable: '--font-mono',
 })
 const bai = Bai({
   subsets: ['latin'],
@@ -22,7 +29,11 @@ export const metadata = {
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en">
-      <body className={`${roboto.variable} ${bai.variable}`}>{children}</body>
+      <body
+        className={`${roboto.variable} ${bai.variable} ${mono.variable} bg-gray-900 font-sans text-gray-100`}
+      >
+        {children}
+      </body>
     </html>
   )
 }
